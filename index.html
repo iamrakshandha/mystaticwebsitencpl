@@ -2,7 +2,7 @@
     <head>
 	<script>
 		async function callAwsLambdaFunction() {
-			fetch( 'ADD API URL HERE',  {
+			fetch( 'https://vkvuo4trv3.execute-api.us-east-1.amazonaws.com/Staging',  {
 				method: 'GET'
 			  })
 			.then(response => response.json())
@@ -12,10 +12,10 @@
 			});
         }
     </script>   
-        <title>Test</title>
+        <title>Basic Website</title>
     </head>
     <body>
-		<p>This is only a test, nothing else.</p>
+		<p>Hi, Welcome to Rakshandha's APIs</p>
         <p>Click below button to call API gateway and display result below!</p>
         <p><div id="myDiv"></div></p>
         <button onclick="callAwsLambdaFunction()">Click me!</button>
